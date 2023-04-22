@@ -1,0 +1,21 @@
+<body>
+<h1>Add Event</h1>
+<div class="container">
+<label>Event No:</label>
+<input type="number" [(ngModel)]="event_no" min="0"><br>
+<label>Event Name:</label>
+<input type="text" [(ngModel)]="event_name"><br>
+<label>Event Description:</label>
+<textarea [(ngModel)]="event_description"></textarea><br>
+<button type="submit" (click)="addEvent()">ADD EVENT</button>
+</div>
+
+<h1>Lists of Events</h1>
+<ul>
+  <li *ngFor="let event of events">
+    <strong>Event No:</strong> {{ event.event_no }}<br>
+    <strong>Event Name:</strong> {{ event.event_name }}<br>
+    <strong>Event Description:</strong> {{ event.event_description }}
+  </li>
+</ul>
+</body>

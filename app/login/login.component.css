@@ -1,0 +1,81 @@
+body{
+  background-image: url('src/assets/hello2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+    margin-left: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    /* background: linear-gradient(90deg, #0F2027 0%, #203A43 100%);
+    animation: fade-in 1s ease forwards; */
+  }
+  
+  form {
+    width: 300px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 96%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    margin-top: 10px;
+    margin-right: 1%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    width: 49%; /* make buttons half width of input */
+    font-size: 1.1em;
+  }
+  
+  .btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background-color: #3a853c;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #EF5350;
+    color: #fff;
+  }
+  .btn-secondary:hover {
+    background-color: #9e3634;
+    color: #fff;
+  }
+  
+  /* adjust button alignment */
+  button[type="button"] {
+    display: inline-block;
+  }  
+  .container > form > div {
+    margin-bottom: 20px;
+  }
+  

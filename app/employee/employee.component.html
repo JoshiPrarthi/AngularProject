@@ -1,0 +1,83 @@
+<body>
+  <div *ngIf="employee_add">
+  <h1>Add Employee</h1>
+  <form>
+    <label>Employee ID:</label>
+    <input type="number" [(ngModel)]="emp_id" name="emp_id" required autocomplete="off" min="0">
+    
+    <label>Employee Name:</label>
+    <input type="text" [(ngModel)]="emp_name" name="emp_name" required autocomplete="off">
+    
+    <label>Contact Number:</label>
+    <input type="tel" [(ngModel)]="emp_contactnumber" name="emp_contactnumber" maxlength="10" required autocomplete="off">
+    
+    <label>Gender:</label>
+    <select [(ngModel)]="emp_gender" name="emp_gender" required>
+      <option value="">--Select--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    
+    <label>Spouse:</label>
+    <input type="text" [(ngModel)]="emp_spouse" name="emp_spouse" autocomplete="off">
+    
+    <label>Children:</label>
+    <input type="number" [(ngModel)]="emp_children" name="emp_children" autocomplete="off">
+    
+    <label>Designation:</label>
+    <input type="text" [(ngModel)]="emp_designation" name="emp_designation" required autocomplete="off">
+    
+    <label>Education Level:</label>
+    <input type="text" [(ngModel)]="emp_educationlevel" name="emp_educationlevel" required autocomplete="off">
+    
+      <label for="emp-bloodgroup">Blood Group : </label>
+      <select id="emp-bloodgroup" [(ngModel)]="emp_bloodgroup" name="emp_bloodgroup" required>
+        <option value="" disabled selected>Select Blood Group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+    <button type="submit" (click)="add_emp()">ADD EMPLOYEE</button>
+  </form>
+  </div>
+  
+  <h1>List of Employees</h1>
+    <div *ngIf="employeeList.length">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Contact Number</th>
+            <th>Gender</th>
+            <th>Spouse</th>
+            <th>Children</th>
+            <th>Designation</th>
+            <th>Education Level</th>
+            <th>Blood Group</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employeeList">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.contactNumber}}</td>
+            <td>{{employee.gender}}</td>
+            <td>{{employee.spouse}}</td>
+            <td>{{employee.children}}</td>
+            <td>{{employee.designation}}</td>
+            <td>{{employee.educationLevel}}</td>
+            <td>{{employee.bloodGroup}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="!employeeList.length">
+      <p>No employee found.</p>
+    </div>
+  </body>

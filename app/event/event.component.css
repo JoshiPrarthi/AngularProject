@@ -1,0 +1,85 @@
+body {
+  background-image: url('src/assets/balloon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  margin-top: 0;
+  padding-top: 50px;
+    text-align:center;
+    font-family:Arial, 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);
+    font-size: 35px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 30px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px black;
+  width: 60%;
+  background-color: #0000004b;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+label {
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+  font-size: 15px;
+  outline: none;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border:1px solid rgb(126, 184, 59);
+  background-color: rgb(223, 223, 223);
+}
+
+button[type="submit"] {
+  padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid rgb(183, 255, 101);
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size:15px;
+    margin-top:20px;
+    transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(183, 255, 101);
+    color: black;}
+ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 50%;
+  padding: 0;
+}
+
+li {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.253);
+  background-color: rgba(183, 255, 101, 0.849);
+}
+
+li:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+  font-weight: bold;
+  margin-right: 5px;
+}

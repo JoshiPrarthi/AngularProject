@@ -1,0 +1,42 @@
+.box{
+  background-image: url('src/assets/work1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.301);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h2{
+    color:white;
+    font-size:35px;
+  }
+  button {
+    font-size: 20px;
+    padding: 10px 30px;
+    width : 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+  }
+  
